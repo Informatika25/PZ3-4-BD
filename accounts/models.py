@@ -17,6 +17,8 @@ class Course(models.Model):
         related_name='courses'
     )
 
+    description = models.TextField(blank=True)
+
     def __str__(self):
         return self.title
 
